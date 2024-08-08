@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(158, 235, 158);
+}
+.scores-header{
+    background-color:green;
+    color:white;
+    height:40px;
+    border-radius: 5px;
+    text-align: center;
+    margin:20px;
+    padding: 10px;
+}
+.scores-header:hover{
+    background-color: darkgreen;
+}
+.timer{
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
