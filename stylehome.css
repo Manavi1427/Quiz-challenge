@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(158, 235, 158);
+    background-color: rgb(174, 237, 174);
 }
 .scores-header{
     background-color:green;
@@ -30,4 +30,17 @@ h1{
     text-align: center; 
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
+}
+#startbtn{
+    text-align: center;
+ }
+#start{
+    background-color:green;
+    color:white;
+    height:50px;
+    border-radius: 5px;
+    text-align: center;
+    margin:20px;
+    padding: 10px;
+    font-size: larger;
 }
