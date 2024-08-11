@@ -34,8 +34,11 @@ h1{
 }
 .rule1{
     margin:20px;
-    background-color: rgb(216, 245, 210);
-    color:rgb(1, 47, 1)
+    padding:15px;
+    background-color: rgba(216, 245, 210, 0.753);
+    color:rgb(1, 47, 1);
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.686);
 }
 #startbtn{
     text-align: center;
