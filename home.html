@@ -49,13 +49,15 @@
                 <p>Your final score is:
                     <span id="score-final"></span>
                 </p>
-                <p>
-                    Please enter your name:
-                    <input placeholder="enter name" type="text" id="name" max="3" />
-                    <button id="submit-score">
-                        Submit
-                    </button>
-                </p>
+            <div class="form">
+                <form>
+                    <label for="name">Enter your Name </label>
+                    <input placeholder="name" type="text" id="name">
+                    <label for="email">Enter your email id </label>
+                    <input type="email" id="email">
+                    <label for="level">Enter the level of quiz you want to play</label>
+                </form>
+            </div>
             </div>
 
             <div id="feedback" class="feedback hide">
