@@ -58,3 +58,10 @@ h1{
     padding: 10px;
     font-size: larger;
 }
+.form{
+    margin:20px;
+    padding:20px;
+    font-size: larger;
+    color:rgba(18, 49, 1, 0.466);
+    border-color: green;
+}
