@@ -36,23 +36,12 @@
                         <button id="start"> Start Quiz </button>
                     </div>
                     <div id="signup-btn">
-                        <button id="signup"> Sign Up </button>
+                        <button id="signup" onclick="signup()"> Sign Up </button>
                     </div>
                 </div>
             </div>
 
-            <div class="hide" id="questions">
-                <h2 id="question-words"></h2>
-                <div class="options" id="options">
-                </div>
-            </div>
-
-            <div class="hide" id="quiz-end">
-                <h2>All Done!</h2>
-                <p>Your final score is:
-                    <span id="score-final"></span>
-                </p>
-            <div class="form">
+            <div class="form" id="form1">
                 <form>
                     <div class="form-grp">
                         <label for="name">Enter your Name </label>
@@ -75,16 +64,24 @@
                             <option value="advance">advance</option>
                         </select><br/>
                     </div>
-                    <div class="form-grp">
-                        
-                    </div>
                 </form>
             </div>
             </div>
-
+            <div class="hide" id="questions">
+                <h2 id="question-words"></h2>
+                <div class="options" id="options">
+                </div>
+            </div>
+            <div class="hide" id="quiz-end">
+                <h2>All Done!</h2>
+                <p>Your final score is:
+                    <span id="score-final"></span>
+                </p>
+            </div>
             <div id="feedback" class="feedback hide">
             </div>
         </main>
     </div>
 </body>
+<script src="quiz.js"></script>
 </html>

@@ -64,6 +64,7 @@ h1{
     font-size: larger;
     color:rgba(18, 49, 1);
     border-color: green;
+    display:none;
 }
 .form-grp{
     margin-bottom:20px;
@@ -73,7 +74,6 @@ h1{
     background-color: rgba(255, 255, 255, 0.342);
     text-align: center;
     border-radius: 5px;
-   
 
 }
 .form-grp input,.form-grp select{
