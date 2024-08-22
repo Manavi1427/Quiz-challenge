@@ -26,6 +26,9 @@ h1{
     font-size:40px;
     font-family: Arial, Helvetica, sans-serif;
 }
+#rules-panelbar{
+    display:block;
+}
 .rules{
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
