@@ -49,3 +49,25 @@ let questions=[
         answer: "letiable",
     },
 ];
+let ques=document.querySelector("#questions")
+let timer1=document.querySelector("#timer")
+let name=document.querySelector("#uname")
+let startbtn=document.querySelector("#start")
+let submitbtn=document.querySelector("#submit-score")
+let feedback=document.querySelector("#feedback")
+
+let currentQuestionIndex = 0;
+let time = questions.length * 15;
+let timerId;
+
+function startQuiz(){
+    timerId.setInterval(clockTick,1000);
+    timer1.textContent=time;
+    let landindscreen=document.querySelector("#start-screen");
+    landingscreen.setAttribute("class","hide");
+    ques.removeAttribute("class");
+    getQuesion();
+}
+function getQuesion(){
+    
+}

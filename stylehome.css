@@ -94,6 +94,9 @@ h1{
 .submit{
     background:none;
 }
+.hide{
+    display:none;
+}
 @media (max-width: 600px) {
     .form-container {
         padding: 15px;
