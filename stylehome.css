@@ -54,18 +54,9 @@ h1{
 #startbtn,#signup-btn{
     text-align: center;
  }
-#start,#signup {
-    background-color:green;
-    color:white;
-    height:50px;
-    border-radius: 5px;
-    text-align: center;
-    margin:20px;
-    padding: 10px;
-    font-size: larger;
-}
 .form{
-    margin:20px;
+    width:70%;
+    margin:auto;
     padding:20px;
     font-size: larger;
     color:rgba(18, 49, 1);
@@ -79,7 +70,7 @@ h1{
     padding:10px;
     background-color: rgba(255, 255, 255, 0.342);
     text-align: center;
-    border-radius: 5px;
+    border-radius: 7px;
 
 }
 .form-grp .input,.form-grp select{
@@ -89,6 +80,19 @@ h1{
     border-radius: 5px;
     font-size: 20px;
     text-align: center;
+}
+#start,#signup {
+    background-color:green;
+    color:white;
+    height:50px;
+    border-radius: 5px;
+    text-align: center;
+    margin:20px;
+    padding: 10px;
+    font-size: larger;
+}
+.submit{
+    background:none;
 }
 @media (max-width: 600px) {
     .form-container {
