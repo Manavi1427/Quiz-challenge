@@ -50,6 +50,7 @@ let questions=[
     },
 ];
 let ques=document.querySelector("#questions")
+let choices =document.querySelector("#options");
 let timer1=document.querySelector("#timer")
 let name=document.querySelector("#uname")
 let startbtn=document.querySelector("#start")
@@ -63,11 +64,23 @@ let timerId;
 function startQuiz(){
     timerId.setInterval(clockTick,1000);
     timer1.textContent=time;
-    let landindscreen=document.querySelector("#start-screen");
+    let landingscreen=document.querySelector("#start-screen");
     landingscreen.setAttribute("class","hide");
     ques.removeAttribute("class");
     getQuesion();
 }
 function getQuesion(){
-    
+    let currentQuestion=questions[currentQuestionIndex];
+    let prompt1=document.querySelector("#question-words");
+    prompt1.textcontent=currentQuestion.prompt;
+    choices.innerHTML = "";
+    currentQuestion.options.forEach(
+        function (choice, i) {
+            let choiceBtn =document.createElement("button");
+            choiceBtn.setAttribute("value",choice);
+            choiceBtn.textContent =i + 1 + ". " + choice;
+            choiceBtn.onclick =questionClick;
+            choices.appendChild(choiceBtn);
+        }
+    );
 }
