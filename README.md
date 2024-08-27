@@ -1,2 +1,2 @@
 Coding Quiz challenge- algobricks
-A quiz webzite for coding questions using html, css and javascript.
+A quiz website for coding questions using html, css and javascript.
