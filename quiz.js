@@ -50,11 +50,6 @@ let questions=[
     },
 ];
 
-function clockTick() {
-    time--;
-    timerEl.textContent = time;
-}
-
 let ques=document.querySelector("#questions")
 let choices =document.querySelector("#options");
 let timer1=document.querySelector("#timer")
@@ -96,4 +91,9 @@ function getQuesion(){
 function questionClick(){
     let a=1;
 }
+function clockTick() {
+    time--;
+    timer1.textContent = time;
+}
+
 startbtn.onclick=startQuiz();
