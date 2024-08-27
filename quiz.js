@@ -69,11 +69,11 @@ function startQuiz(){
     let landingscreen=document.querySelector("#start-screen");
     landingscreen.setAttribute("class","hide");
     ques.removeAttribute("class");
-    getQuesion();
+    getQuestion();
 }
 
 //to get the questions and options 
-function getQuesion(){
+function getQuestion(){
     let currentQuestion=questions[currentQuestionIndex];
     let prompt1=document.querySelector("#question-words");
     prompt1.textcontent=currentQuestion.prompt;
@@ -89,7 +89,29 @@ function getQuesion(){
     );
 }
 function questionClick(){
-    let a=1;
+    if (this.value !==questions[currentQuestionIndex].answer) {
+        time -= 10;
+        if (time < 0) {
+            time = 0;
+        }
+        timer1.textcontent=time;
+        feedback.textcontent=`wrong answer`
+        feedback.style.color="red"
+    }
+    else {
+        feedback.textContent ="Correct!";
+        feedback.style.color ="green";
+    }
+    feedback.setAttribute("class","feedback")
+    setTimeout(function(){
+        feedback.setAttribute("class","feedback hide")
+    },2000 )
+    currentQuestionIndex++;
+    if (currentQuestionIndex === questions.length) {
+        quizEnd();
+    } else {
+        getQuestion();
+    }
 }
 function clockTick() {
     time--;
