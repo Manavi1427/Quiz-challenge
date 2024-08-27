@@ -49,6 +49,12 @@ let questions=[
         answer: "letiable",
     },
 ];
+
+function clockTick() {
+    time--;
+    timerEl.textContent = time;
+}
+
 let ques=document.querySelector("#questions")
 let choices =document.querySelector("#options");
 let timer1=document.querySelector("#timer")
@@ -61,14 +67,17 @@ let currentQuestionIndex = 0;
 let time = questions.length * 15;
 let timerId;
 
+//to start the quiz and hide the main page
 function startQuiz(){
-    timerId.setInterval(clockTick,1000);
+    timerId=setInterval(clockTick,1000);
     timer1.textContent=time;
     let landingscreen=document.querySelector("#start-screen");
     landingscreen.setAttribute("class","hide");
     ques.removeAttribute("class");
     getQuesion();
 }
+
+//to get the questions and options 
 function getQuesion(){
     let currentQuestion=questions[currentQuestionIndex];
     let prompt1=document.querySelector("#question-words");
@@ -84,3 +93,7 @@ function getQuesion(){
         }
     );
 }
+function questionClick(){
+    let a=1;
+}
+startbtn.onclick=startQuiz();
