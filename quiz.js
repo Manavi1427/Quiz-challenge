@@ -76,7 +76,7 @@ function startQuiz(){
 function getQuestion(){
     let currentQuestion=questions[currentQuestionIndex];
     let prompt1=document.querySelector("#question-words");
-    prompt1.textcontent=currentQuestion.prompt;
+    prompt1.textContent=currentQuestion.prompt;
     choices.innerHTML = "";
     currentQuestion.options.forEach(
         function (choice, i) {
@@ -103,6 +103,7 @@ function questionClick(){
         feedback.style.color ="green";
     }
     feedback.setAttribute("class","feedback")
+    //setTimeout->function is repeated after some delay
     setTimeout(function(){
         feedback.setAttribute("class","feedback hide")
     },2000 )
@@ -113,9 +114,14 @@ function questionClick(){
         getQuestion();
     }
 }
+
+function quizEnd(){
+    clearInterval(timerId)
+    let endscreen=document.querySelector("#quiz-end")
+    endscreen.removeAttribute("class")
+
+}
 function clockTick() {
     time--;
     timer1.textContent = time;
 }
-
-startbtn.onclick=startQuiz();
