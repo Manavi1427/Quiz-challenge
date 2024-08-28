@@ -119,9 +119,15 @@ function quizEnd(){
     clearInterval(timerId)
     let endscreen=document.querySelector("#quiz-end")
     endscreen.removeAttribute("class")
+    let score=document.querySelector("#score-final")
+    score.textContent=time;
+    questions.setAttribute("class","hide")
 
 }
 function clockTick() {
     time--;
     timer1.textContent = time;
+    if (time <= 0) {
+        quizEnd();
+    }
 }

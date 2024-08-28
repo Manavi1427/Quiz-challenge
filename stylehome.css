@@ -9,6 +9,7 @@ body{
     text-align: center;
     margin:20px;
     padding: 10px;
+    position: absolute;
 }
 .scores-header:hover{
     background-color: darkgreen;
@@ -16,6 +17,9 @@ body{
 .timer{
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 20px;
+    right: 15px;
 }
 h1{
     text-align: center;
@@ -28,6 +32,7 @@ h1{
     color:rgb(30, 50, 30);
     font-size:40px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top:40px;
 }
 #rules-panelbar{
     display:block;
