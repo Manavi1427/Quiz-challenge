@@ -81,6 +81,7 @@ function getQuestion(){
     currentQuestion.options.forEach(
         function (choice, i) {
             let choiceBtn =document.createElement("button");
+            choiceBtn.setAttribute("class","option-btn")
             choiceBtn.setAttribute("value",choice);
             choiceBtn.textContent =i + 1 + ". " + choice;
             choiceBtn.onclick =questionClick;
