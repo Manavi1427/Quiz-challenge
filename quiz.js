@@ -53,7 +53,7 @@ let questions=[
 let ques=document.querySelector("#questions")
 let choices =document.querySelector("#options");
 let timer1=document.querySelector("#timer")
-let name=document.querySelector("#uname")
+let uname=document.querySelector("#uname")
 let startbtn=document.querySelector("#start")
 let submitbtn=document.querySelector("#submit-score")
 let feedback=document.querySelector("#feedback")
@@ -132,3 +132,14 @@ function clockTick() {
         quizEnd();
     }
 }
+function savehighscore(){
+    let name1=uname.value.trim()
+    if(name1!==""){
+        let highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+        let newscore={ name:name1, score:time}
+        highscores.push(newscore);
+        window.localStorage.setItem("highscores",JSON.stringify(highscores));
+        alert("Your score has been submitted !")
+    }
+}
+
