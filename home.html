@@ -50,7 +50,7 @@
                     </div>
                     <div class="form-grp">
                         <label for="uname">Enter your username </label>
-                        <input class="input" type="text" id="uname"><br/>
+                        <input class="input" type="text" id="name" onkeyup="checkforenter()"><br/>
                     </div>
                     <div class="form-grp">
                         <label for="email">Enter your email id </label>
@@ -81,7 +81,9 @@
                 <p>Your final score is:
                     <span id="score-final"></span>
                 </p>
-                <button id="submit-score" class="submit">Submit</button>
+                <p>Pls enter your name</p>
+                <input type="text" id="uname"/>
+                <button id="submit-score" class="submit" onclick="savehighscore()">Submit</button>
             </div>
             <div id="feedback" class="feedback hide">
             </div>
@@ -89,4 +91,5 @@
     </div>
 </body>
 <script src="quiz.js"></script>
+<script src="highscore.js"></script>
 </html>

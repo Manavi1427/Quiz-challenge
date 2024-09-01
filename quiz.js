@@ -122,7 +122,7 @@ function quizEnd(){
     endscreen.removeAttribute("class")
     let score=document.querySelector("#score-final")
     score.textContent=time;
-    questions.setAttribute("class","hide")
+    ques.setAttribute("class","hide")
 
 }
 function clockTick() {
@@ -139,7 +139,14 @@ function savehighscore(){
         let newscore={ name:name1, score:time}
         highscores.push(newscore);
         window.localStorage.setItem("highscores",JSON.stringify(highscores));
-        alert("Your score has been submitted !")
+        alert("Your score has been submitted !");
     }
 }
-
+function checkforenter(event){
+    if(event.key==="enter"){
+        savehighscore()
+        alert(
+            "Your Score has been Submitted"
+        );
+    }
+}
