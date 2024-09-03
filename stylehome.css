@@ -137,6 +137,8 @@ h1{
 #quiz-end{
     text-align: center;
     background-color: rgba(229, 235, 233, 0.453);
+    margin:20px;
+    padding:20px;
 }
 #quiz-end h2{
     color:rgb(2, 67, 2);
@@ -148,11 +150,19 @@ h1{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;   
 }
-.username{
+.username label{
     text-align: center;
     font-size: larger;
+    color: rgb(2, 72, 2);
 }
-.username button{
+.username input{
+    height:20px;
+    border-color:rgba(18, 49, 1, 0.589) ;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+.username .submit{
     height: 25px;
     background-color:green;
     color:white;
