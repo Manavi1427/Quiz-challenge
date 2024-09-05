@@ -136,7 +136,7 @@ function savehighscore(){
     let name1=uname.value.trim()
     if(name1!==""){
         let highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
-        let newscore={ name:name1, score:time}
+        let newscore={ "name":name1, "score":time}
         highscores.push(newscore);
         window.localStorage.setItem("highscores",JSON.stringify(highscores));
         alert("Your score has been submitted !");

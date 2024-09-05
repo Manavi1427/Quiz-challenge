@@ -1,6 +1,6 @@
 let scoresbtn=document.querySelector("#view-high-scores")
+let highscores=JSON.parse(window.localStorage.getItem("highscores"))|| [];
 function printhighscore(){
-    let highscores=JSON.parse(window.localStorage.getItem("highscores"))|| [];
     highscores.sort(function(a,b){
         return a.score-b.score
     });
